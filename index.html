@@ -994,34 +994,6 @@ function sendToWhatsApp() {
 }
 
 </script>
-<script>
 
-function sendToWhatsApp() {
-
-    let name = document.querySelector('input[placeholder="Your full name"]').value;
-
-    let phone = document.querySelector('input[placeholder="+91 XXXXX XXXXX"]').value;
-
-    let email = document.querySelector('input[placeholder="your@email.com"]').value;
-
-    let service = document.querySelector('select').value;
-
-    let message = document.querySelector('textarea').value;
-
-    let whatsappMessage =
-`*New Business Enquiry*%0A%0A
-*Name:* ${name}%0A
-*Phone:* ${phone}%0A
-*Email:* ${email}%0A
-*Service:* ${service}%0A
-*Message:* ${message}`;
-
-    let url =
-`https://wa.me/918883921424?text=${whatsappMessage}`;
-
-    window.open(url, "_blank");
-}
-
-</script>
 </body>
 </html>
